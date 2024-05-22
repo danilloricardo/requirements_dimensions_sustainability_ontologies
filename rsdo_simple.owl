@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.menthor.net/myontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.menthor.net/myontology">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#AccessibilityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AccountabilityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppropriatenessRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomicProductQualityCatalogueRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthenticityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComfortRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfidentialityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EconomicDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FairnessRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntegrityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegislationRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-RepudiationRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PleasureRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SatisfactionRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stakeholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SustainabilityDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SustainableDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrustRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsabilityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsefulnessRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RSRO::FunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RSRO::Non-FunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RSRO::ProductQualityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RSRO::Requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPO::ProcessUniversal"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AccessibilityRequirement"/>
+        <Class IRI="#UsabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountabilityRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountabilityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#authenticityrequirement"/>
+            <Class IRI="#AuthenticityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AccountabilityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#confidentialityrequirement"/>
+            <Class IRI="#ConfidentialityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppropriatenessRequirement"/>
+        <Class IRI="#UsabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomicProductQualityCatalogueRequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthenticityRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthenticityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#accountabilityrequirement"/>
+            <Class IRI="#AccountabilityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthenticityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#integrityrequirement"/>
+            <Class IRI="#IntegrityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComfortRequirement"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+            <Class IRI="#ProductQualityCatalogueRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidentialityRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidentialityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#accountabilityrequirement"/>
+            <Class IRI="#AccountabilityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicDimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalDimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#legislationrequirement"/>
+            <Class IRI="#LegislationRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+            <Class IRI="#ProductQualityCatalogueRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaluation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#qualification"/>
+            <Class IRI="#Qualification"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FairnessRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#legislationrequirement"/>
+            <Class IRI="#LegislationRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualDimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntegrityRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntegrityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#authenticityrequirement"/>
+            <Class IRI="#AuthenticityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegislationRequirement"/>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegislationRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#environmentalriskmitigationrequirement"/>
+            <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegislationRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#healthandsafetyriskmitigationrequirement"/>
+            <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-RepudiationRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-RepudiationRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#securityrequirement"/>
+            <Class IRI="#SecurityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PleasureRequirement"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+        <Class IRI="#RSRO::ProductQualityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#compositeproductqualitycataloguerequirement"/>
+            <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#evaluation"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualification"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualification"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#evaluation"/>
+            <Class IRI="#Evaluation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualification"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#score"/>
+            <Class IRI="#Score"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SatisfactionRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SatisfactionRequirement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SatisfactionRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#stakeholder"/>
+            <Class IRI="#Stakeholder"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Score"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Score"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#qualification"/>
+            <Class IRI="#Qualification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityRequirement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#non-repudiationrequirement"/>
+            <Class IRI="#Non-RepudiationRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialDimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialDimension"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#socialsustainabilityrequirement"/>
+            <Class IRI="#SocialSustainabilityRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#socialdimension"/>
+            <Class IRI="#SocialDimension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#satisfactionrequirement"/>
+            <Class IRI="#SatisfactionRequirement"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SustainabilityDimension"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SustainabilityDimension"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sustainabledevelopment"/>
+            <Class IRI="#SustainableDevelopment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SustainableDevelopment"/>
+        <Class IRI="#SPO::ProcessUniversal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SustainableDevelopment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#sustainabilitydimension"/>
+            <Class IRI="#SustainabilityDimension"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnicalDimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrustRequirement"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsabilityRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsefulnessRequirement"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RSRO::FunctionalRequirement"/>
+        <Class IRI="#RSRO::Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RSRO::Non-FunctionalRequirement"/>
+        <Class IRI="#RSRO::Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RSRO::ProductQualityRequirement"/>
+        <Class IRI="#RSRO::Non-FunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RSRO::Requirement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SPO::ProcessUniversal"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AccessibilityRequirement"/>
+        <Class IRI="#AccountabilityRequirement"/>
+        <Class IRI="#AppropriatenessRequirement"/>
+        <Class IRI="#AtomicProductQualityCatalogueRequirement"/>
+        <Class IRI="#AuthenticityRequirement"/>
+        <Class IRI="#ComfortRequirement"/>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+        <Class IRI="#ConfidentialityRequirement"/>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+        <Class IRI="#Evaluation"/>
+        <Class IRI="#FairnessRequirement"/>
+        <Class IRI="#FreedomfromRiskRequirement"/>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+        <Class IRI="#IntegrityRequirement"/>
+        <Class IRI="#LegislationRequirement"/>
+        <Class IRI="#Non-RepudiationRequirement"/>
+        <Class IRI="#PleasureRequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+        <Class IRI="#Qualification"/>
+        <Class IRI="#SatisfactionRequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+        <Class IRI="#SustainabilityDimension"/>
+        <Class IRI="#TrustRequirement"/>
+        <Class IRI="#UsabilityRequirement"/>
+        <Class IRI="#UsefulnessRequirement"/>
+        <Class IRI="#RSRO::FunctionalRequirement"/>
+        <Class IRI="#RSRO::Non-FunctionalRequirement"/>
+        <Class IRI="#RSRO::ProductQualityRequirement"/>
+        <Class IRI="#RSRO::Requirement"/>
+        <Class IRI="#SPO::ProcessUniversal"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#authenticityrequirement"/>
+        <ObjectProperty IRI="#accountabilityrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#accountabilityrequirement"/>
+        <ObjectProperty IRI="#confidentialityrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#authenticityrequirement"/>
+        <ObjectProperty IRI="#integrityrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#compositeproductqualitycataloguerequirement"/>
+        <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#environmentalriskmitigationrequirement"/>
+        <ObjectProperty IRI="#legislationrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#evaluation"/>
+        <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#evaluation"/>
+        <ObjectProperty IRI="#qualification"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#legislationrequirement"/>
+        <ObjectProperty IRI="#healthandsafetyriskmitigationrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#securityrequirement"/>
+        <ObjectProperty IRI="#non-repudiationrequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#satisfactionrequirement"/>
+        <ObjectProperty IRI="#stakeholder"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#socialsustainabilityrequirement"/>
+        <ObjectProperty IRI="#socialdimension"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sustainabilitydimension"/>
+        <ObjectProperty IRI="#sustainabledevelopment"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accountabilityrequirement"/>
+        <Class IRI="#AuthenticityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accountabilityrequirement"/>
+        <Class IRI="#ConfidentialityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#authenticityrequirement"/>
+        <Class IRI="#AccountabilityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#authenticityrequirement"/>
+        <Class IRI="#IntegrityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compositeproductqualitycataloguerequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#confidentialityrequirement"/>
+        <Class IRI="#AccountabilityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#environmentalriskmitigationrequirement"/>
+        <Class IRI="#LegislationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluation"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evaluation"/>
+        <Class IRI="#Qualification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#healthandsafetyriskmitigationrequirement"/>
+        <Class IRI="#LegislationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#integrityrequirement"/>
+        <Class IRI="#AuthenticityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legislationrequirement"/>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legislationrequirement"/>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#non-repudiationrequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+        <Class IRI="#Evaluation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#qualification"/>
+        <Class IRI="#Evaluation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#qualification"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#satisfactionrequirement"/>
+        <Class IRI="#Stakeholder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#score"/>
+        <Class IRI="#Qualification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#securityrequirement"/>
+        <Class IRI="#Non-RepudiationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#socialdimension"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#socialsustainabilityrequirement"/>
+        <Class IRI="#SocialDimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stakeholder"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sustainabilitydimension"/>
+        <Class IRI="#SustainableDevelopment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sustainabledevelopment"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accountabilityrequirement"/>
+        <Class IRI="#AccountabilityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#authenticityrequirement"/>
+        <Class IRI="#AuthenticityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compositeproductqualitycataloguerequirement"/>
+        <Class IRI="#CompositeProductQualityCatalogueRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#confidentialityrequirement"/>
+        <Class IRI="#ConfidentialityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#environmentalriskmitigationrequirement"/>
+        <Class IRI="#EnvironmentalRiskMitigationRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evaluation"/>
+        <Class IRI="#Evaluation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#healthandsafetyriskmitigationrequirement"/>
+        <Class IRI="#HealthandSafetyRiskMitigationRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#integrityrequirement"/>
+        <Class IRI="#IntegrityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legislationrequirement"/>
+        <Class IRI="#LegislationRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#non-repudiationrequirement"/>
+        <Class IRI="#Non-RepudiationRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#productqualitycataloguerequirement"/>
+        <Class IRI="#ProductQualityCatalogueRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#qualification"/>
+        <Class IRI="#Qualification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#satisfactionrequirement"/>
+        <Class IRI="#SatisfactionRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#score"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#securityrequirement"/>
+        <Class IRI="#SecurityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#socialdimension"/>
+        <Class IRI="#SocialDimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#socialsustainabilityrequirement"/>
+        <Class IRI="#SocialSustainabilityRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stakeholder"/>
+        <Class IRI="#Stakeholder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sustainabilitydimension"/>
+        <Class IRI="#SustainabilityDimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sustainabledevelopment"/>
+        <Class IRI="#SustainableDevelopment"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
+
